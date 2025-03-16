@@ -1,6 +1,11 @@
 import React from 'react'
 import image from "../assets/team-sect.jpeg"
-
+import Product from '../components/product'
+import banner from "../assets/banner-first-collection (1).jpeg"
+import pix from "../assets/product-5-249x300.jpeg"
+import pix2 from "../assets/product-6-300x300.jpeg"
+import pix3 from "../assets/product-7-300x300.jpeg"
+import pix4 from "../assets/product-8-249x300.jpeg"
 const HomeScreen = () => {
   return (
     <div >
@@ -43,9 +48,69 @@ const HomeScreen = () => {
         <p className='font-serif text-[70px] text-center '>Shop New Hijabs</p>
         <p className='font-sans text-[20px] text-center mt-2 text-gray-500'>Lorem ipsum dolor sit amet consec contes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet tempor eget rutrum tellus.</p>
       </div>
-      <div className='w-full h-[50vh] bg-slate-400 flex justify-center'>
-        <div className='w-[80%] h-full bg-slate-50'></div>
+      <Product/>
+      {/* collection section */}
+      <div className='w-full h-[80vh] bg-blue-600 mt-20 '>
+   <div style={{
+    width:"100%",
+    height:"100%",
+    backgroundImage:`url(${banner})`,
+    backgroundRepeat:'no-repeat'
+
+   }}></div>
       </div>
+      <div className='w-full h-[18vh]  flex items-end justify-center'>
+        <div className='w-[8%] h-[40%]  flex gap-3 flex-col items-center'>
+        <div className='w-[40%] h-[1px] bg-[#e3b0c2]'></div>
+                        <div className='text-[#e3b0c2] font-semibold text-center text-[15px]'>BEST SELLER</div>
+                        <div className='w-[40%] h-[1px] bg-[#e3b0c2]'></div>
+        </div>
+      </div>
+      <div className='w-full h-[25vh] '>
+        <p className='font-serif text-[70px] text-center '>Our Best Sellers</p>
+        <p className='font-sans text-[20px] text-center mt-2 text-gray-500'>Lorem ipsum dolor sit amet consec contes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet tempor eget rutrum tellus.</p>
+      </div>
+      <Product/>
+      <div className='w-full h-[53vh]  flex justify-center mt-10'>
+        <div className='w-[80%] h-full  flex gap-5'>
+          <div className='w-[25%] h-full '>
+            <div className='w-full h-[70%]'>
+              <img className='w-full h-full cursor-pointer ' src={pix} alt='product'/>
+            </div>
+            <p className='font-sans text-[22px] text-center mt-2 cursor-pointer'>Cape Town Garden Hijab</p>
+         <p className='font-bold text-[#e88186] text-[23px] underline text-center mb-2 cursor-pointer'>$23</p>
+         <button className='uppercase font-semibold text-white bg-[#e88186] w-[200px] h-[45px] rounded-full ml-14'>Add to cart</button>
+          </div>
+          <div className='w-[25%] h-full '>
+            <div className='w-full h-[70%]'>
+              <img className='w-full h-full cursor-pointer ' src={pix2} alt='product'/>
+            </div>
+            <p className='font-sans text-[22px] text-center mt-2 cursor-pointer'>Cape Town Garden Hijab</p>
+         <p className='font-bold text-[#e88186] text-[23px] underline text-center mb-2 cursor-pointer'>$23</p>
+         <button className='uppercase font-semibold text-white bg-[#e88186] w-[200px] h-[45px] rounded-full ml-14'>Add to cart</button>
+          </div>
+          <div className='w-[25%] h-full '>
+            <div className='w-full h-[70%]'>
+              <img className='w-full h-full cursor-pointer ' src={pix3} alt='product'/>
+            </div>
+            <p className='font-sans text-[22px] text-center mt-2 cursor-pointer'>Cape Town Garden Hijab</p>
+         <p className='font-bold text-[#e88186] text-[23px] underline text-center mb-2 cursor-pointer'>$23</p>
+         <button className='uppercase font-semibold text-white bg-[#e88186] w-[200px] h-[45px] rounded-full ml-14'>Add to cart</button>
+          </div>
+          <div className='w-[25%] h-full '>
+            <div className='w-full h-[70%]'>
+              <img className='w-full h-full cursor-pointer ' src={pix4} alt='product'/>
+            </div>
+            <p className='font-sans text-[22px] text-center mt-2 cursor-pointer'>Cape Town Garden Hijab</p>
+         <p className='font-bold text-[#e88186] text-[23px] underline text-center mb-2 cursor-pointer'>$23</p>
+         <button className='uppercase font-semibold text-white bg-[#e88186] w-[200px] h-[45px] rounded-full ml-14'>Add to cart</button>
+          </div>
+        </div>
+        
+        
+      </div>
+      {/* pagination */}
+      <div className='w-full h-[90vh] bg-[#111111] mt-20'></div>
     </div>
   )
 }
