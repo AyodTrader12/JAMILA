@@ -50,12 +50,13 @@ const HomeScreen = () => {
       </div>
       <Product/>
       {/* collection section */}
-      <div className='w-full h-[80vh] bg-blue-600 mt-20 '>
+      <div className='w-full h-[80vh] mt-20 bg-slate-900'>
    <div style={{
     width:"100%",
     height:"100%",
     backgroundImage:`url(${banner})`,
-    backgroundRepeat:'no-repeat'
+    backgroundRepeat:'no-repeat',
+    backgroundSize:"cover"
 
    }}></div>
       </div>
@@ -110,7 +111,11 @@ const HomeScreen = () => {
         
       </div>
       {/* pagination */}
-      <div className='w-full h-[90vh] bg-[#111111] mt-20'></div>
+      <div className='w-full h-[90vh] bg-[#111111] mt-20'>
+        <div className='bg-white h-full w-[20%]'>
+ccc
+        </div>
+      </div>
     </div>
   )
 }
