@@ -1,11 +1,12 @@
 import React from 'react'
 import image from "../assets/team-sect.jpeg"
 import Product from '../components/product'
-import banner from "../assets/banner-first-collection (1).jpeg"
+import pix5 from "../assets/banner-first-collection (1).jpeg"
 import pix from "../assets/product-5-249x300.jpeg"
 import pix2 from "../assets/product-6-300x300.jpeg"
 import pix3 from "../assets/product-7-300x300.jpeg"
 import pix4 from "../assets/product-8-249x300.jpeg"
+import pix6 from "../assets/about-600x395.jpeg"
 const HomeScreen = () => {
   return (
     <div >
@@ -54,9 +55,10 @@ const HomeScreen = () => {
    <div style={{
     width:"100%",
     height:"100%",
-    backgroundImage:`url(${banner})`,
+    backgroundImage:`url(${pix5})`,
     backgroundRepeat:'no-repeat',
-    backgroundSize:"cover"
+    backgroundSize:"cover",
+    backgroundPosition:"center"
 
    }}></div>
       </div>
@@ -111,9 +113,22 @@ const HomeScreen = () => {
         
       </div>
       {/* pagination */}
-      <div className='w-full h-[90vh] bg-[#111111] mt-20'>
-        <div className='bg-white h-full w-[20%]'>
-ccc
+      <div className='w-full h-[90vh] bg-[#111111] mt-20 flex gap-14'>
+        <div className=' h-full w-[60%] flex items-end'>
+          <img src={pix6} alt="about" className='h-[85%] w-full object-cover object-center' />
+        </div>
+        <div className='h-[85%] bg-pink-200 mt-28 w-[35%]'>
+        <div className='w-full h-[18vh]  flex items-end bg-blue-700 '>
+        <div className='w-[8%] h-[40%]  flex gap-3 flex-col items-center'>
+        <div className='w-[40%] h-[1px] bg-[#e3b0c2]'></div>
+                        <div className='text-[#e3b0c2] font-semibold  text-[15px]'>BEST SELLER</div>
+                        <div className='w-[40%] h-[1px] bg-[#e3b0c2]'></div>
+        </div>
+      </div>
+      <div className='w-full h-[25vh] '>
+        <p className='font-serif text-[70px]  '>Our Best Sellers</p>
+        <p className='font-sans text-[20px] text-center mt-2 text-gray-500'>Lorem ipsum dolor sit amet consec contes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet tempor eget rutrum tellus.</p>
+      </div>
         </div>
       </div>
     </div>
