@@ -117,20 +117,22 @@ const HomeScreen = () => {
         <div className=' h-full w-[60%] flex items-end'>
           <img src={pix6} alt="about" className='h-[85%] w-full object-cover object-center' />
         </div>
-        <div className='h-[85%] bg-pink-200 mt-28 w-[35%]'>
-        <div className='w-full h-[18vh]  flex items-end bg-blue-700 '>
-        <div className='w-[8%] h-[40%]  flex gap-3 flex-col items-center'>
+        <div className='h-[85%] mt-28 w-[35%]'>
+        <div className='w-full h-[5vh]   '>
+        <div className='w-[8%] h-[40%]  flex gap-3 flex-col bg-white'>
         <div className='w-[40%] h-[1px] bg-[#e3b0c2]'></div>
-                        <div className='text-[#e3b0c2] font-semibold  text-[15px]'>BEST SELLER</div>
+                        <div className='text-[#e3b0c2] font-semibold  text-[15px]'>ABOUT</div>
                         <div className='w-[40%] h-[1px] bg-[#e3b0c2]'></div>
         </div>
       </div>
-      <div className='w-full h-[25vh] '>
-        <p className='font-serif text-[70px]  '>Our Best Sellers</p>
-        <p className='font-sans text-[20px] text-center mt-2 text-gray-500'>Lorem ipsum dolor sit amet consec contes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet tempor eget rutrum tellus.</p>
-      </div>
+      
+        <p className='font-serif text-[70px] text-white '>Empower &<br/>inspire</p>
+        <p className='font-sans text-[20px]  mt-2 text-gray-500'>Lorem ipsum dolor sit amet consectetur.<br/> Montes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet<br/> tempor eget rutrum tellus. Leo a luctus vitae.</p>
+      <p className='text-white font-bold mt-5 text-[25px] mb-7'>From the bottom of our hearts, thank<br/> you!</p>
+      <button className='w-[220px] h-[75px] bg-[#f986ae] rounded-full text-white font-bold hover:animate-bounce transition-700'>LEARN MORE</button>
         </div>
       </div>
+      <div className='w-full h-[70vh] bg-slate-500 mt-28'></div>
     </div>
   )
 }
