@@ -7,6 +7,7 @@ import pix2 from "../assets/product-6-300x300.jpeg"
 import pix3 from "../assets/product-7-300x300.jpeg"
 import pix4 from "../assets/product-8-249x300.jpeg"
 import pix6 from "../assets/about-600x395.jpeg"
+import pix7 from "../assets/new.jpg"
 const HomeScreen = () => {
   return (
     <div >
@@ -129,10 +130,24 @@ const HomeScreen = () => {
         <p className='font-serif text-[70px] text-white '>Empower &<br/>inspire</p>
         <p className='font-sans text-[20px]  mt-2 text-gray-500'>Lorem ipsum dolor sit amet consectetur.<br/> Montes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet<br/> tempor eget rutrum tellus. Leo a luctus vitae.</p>
       <p className='text-white font-bold mt-5 text-[25px] mb-7'>From the bottom of our hearts, thank<br/> you!</p>
-      <button className='w-[220px] h-[75px] bg-[#f986ae] rounded-full text-white font-bold hover:animate-bounce transition-700'>LEARN MORE</button>
+      <button className='w-[220px] h-[75px] bg-[#f986ae] rounded-full text-white font-bold hover:animate-bounce transition-all'>LEARN MORE</button>
         </div>
       </div>
-      <div className='w-full h-[70vh] bg-slate-500 mt-28'></div>
+      <div className='w-full h-[70vh] bg-slate-500 mt-28 flex justify-center '>
+        <div className='w-[80%] h-full bg-green-600 flex'>
+          <div className='w-[50%] h-full bg-[#e4989c] p-14'>
+            <h1 className='text-white text-[50px]'>XL Khimar For Maxi Coverage</h1>
+            <p className='text-white font-serif text-[90px] mt-2'>50% OFF</p>
+            <p className='text-white text-[17px] mt-2'>Lorem ipsum dolor sit amet consectetur. Montes quisque urna molestie tincidunt aliquet quam. Imperdiet at pellent esque vitae aliquet tempor eget rutrum tellus. Leo a luctus vitae.
+
+</p>
+<button className='bg-black text-white font-bold h-[75px] w-[200px] rounded-full mt-7 hover:animate-bounce transition-all'>SHOP NOW</button>
+          </div>
+          <div className='w-[50%] h-full bg-purple-900'>
+            <img src={pix7} alt="image" className='h-full w-full ' />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
