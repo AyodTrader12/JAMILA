@@ -148,6 +148,9 @@ const HomeScreen = () => {
           </div>
         </div>
       </div>
+      <div className='w-full h-[80vh] bg-yellow-400 flex items-center justify-center'>
+        <div className='w-[80%] h-[80%] bg-green-800'></div>
+      </div>
     </div>
   )
 }

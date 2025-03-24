@@ -34,8 +34,8 @@ const Header = () => {
             <span><FaInstagram  className="text-white"/></span>
             <span><FaYoutube  className="text-white"/></span>
           </div>
-          <div className="w-[40%] h-full  flex items-center justify-center text-white">ENJOY FREE SHIPPING ON US ORDERS OVER $50</div>
-          <div className="w-[30%] h-full  flex items-center justify-end gap-2">
+          <div className="w-[40%] h-full  flex items-center justify-center text-white min-w-[768px]">ENJOY FREE SHIPPING ON US ORDERS OVER $50</div>
+          <div className="w-[30%] h-full  flex items-center justify-end gap-2 min-w-[768px]">
             <p className="text-white font-semibold">united states (USD $)</p>
             <span><RiArrowDropDownLine  className="text-white font-semibold size-7"/></span>
           </div>
@@ -65,7 +65,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[40%] flex justify-center bg-[#efeeec]">
+        <div className="w-full h-[40%] flex justify-center bg-[#efeeec]  md:">
           <div className=" w-[82%] h-full flex items-center justify-between ">
             {
               nav.map(el =>(
