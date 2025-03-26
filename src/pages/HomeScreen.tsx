@@ -12,24 +12,26 @@ const HomeScreen = () => {
   return (
     <div >
       {/* hero page */}
-      <div className='w-full h-[90vh]'>
+      <div className='w-full h-[95vh]'>
         <div style={{
           height:"100%",
           width:"100%",
           backgroundImage:`url(${image})`,
           backgroundRepeat:'no-repeat'
           , backgroundSize:'cover',
-          backgroundPosition:''
+        maxWidth:"768px",backgroundPosition:'center',
+          
+
         }}>
-          <div className='bg-black opacity-50 w-full h-full flex items-center'>
-            <div className='w-[40%] h-[70%]  ml-36'>
-              <h1 className='text-[70px] font-serif text-white'>
+          <div className='bg-black opacity-50 w- h-full flex items-center'>
+            <div className='w-full h-[80%]  p-10 sm:p-5  md:w-[45%] '>
+              <h1 className='text-[30px] md:text-[70px]  font-serif text-white'>
                 Summer Clearance Events Extra
               </h1>
-              <p className='text-[80px] font-serif text-[#fbb5a4]'>
+              <p className='text-[50px] md:text-[70px] font-serif text-[#fbb5a4]'>
                30% OFF
               </p>
-              <p className='mt-7 text-white font-sans text-[25px]'>Up to 80% off sitewide with items as low as $5.99. While items last.
+              <p className='mt-7 text-white font-sans text-[20px] md:text-[35px]'>Up to 80% off sitewide with items as low as $5.99. While items last.
               </p>
               <button className='text-lg font-bold text-white bg-[#f75159] rounded-full px-10 py-3 mt-7 uppercase h-[65px]'>
                 shop now
