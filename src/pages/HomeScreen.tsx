@@ -19,13 +19,13 @@ const HomeScreen = () => {
           backgroundImage:`url(${image})`,
           backgroundRepeat:'no-repeat'
           , backgroundSize:'cover',
-        maxWidth:"768px",backgroundPosition:'center',
+        
           
 
         }}>
-          <div className='bg-black opacity-50 w- h-full flex items-center'>
+          <div className='bg-black opacity-50 w-full h-full flex items-center'>
             <div className='w-full h-[80%]  p-10 sm:p-5  md:w-[45%] '>
-              <h1 className='text-[30px] md:text-[70px]  font-serif text-white'>
+              <h1 className='text-[35px] md:text-[70px]  font-serif text-white'>
                 Summer Clearance Events Extra
               </h1>
               <p className='text-[50px] md:text-[70px] font-serif text-[#fbb5a4]'>
@@ -76,7 +76,7 @@ const HomeScreen = () => {
         <p className='font-serif text-[70px] text-center '>Our Best Sellers</p>
         <p className='font-sans text-[20px] text-center mt-2 text-gray-500'>Lorem ipsum dolor sit amet consec contes quisque urna molestie tincidunt aliquet<br/> quam. Imperdiet at pellent esque vitae aliquet tempor eget rutrum tellus.</p>
       </div>
-      <Product/>
+    
       <div className='w-full h-[53vh]  flex justify-center mt-10'>
         <div className='w-[80%] h-full  flex gap-5'>
           <div className='w-[25%] h-full '>
